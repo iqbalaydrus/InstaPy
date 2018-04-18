@@ -1,13 +1,15 @@
 import os
 import time
+import json
 from tempfile import gettempdir
 
 from selenium.common.exceptions import NoSuchElementException
 
 from instapy import InstaPy
 
-insta_username = ''
-insta_password = ''
+credentials = json.load(open('/home/iqbal/credentials.json'))
+insta_username = credentials['username']
+insta_password = credentials['password']
 
 # set headless_browser=True if you want to run InstaPy on a server
 
