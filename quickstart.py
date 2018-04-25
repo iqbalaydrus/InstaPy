@@ -20,7 +20,7 @@ insta_password = credentials['password']
 
 session = InstaPy(username=insta_username,
                   password=insta_password,
-                  headless_browser=False,
+                  nogui=True,
                   multi_logs=True)
 
 try:
